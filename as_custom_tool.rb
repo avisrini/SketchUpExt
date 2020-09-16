@@ -5,7 +5,8 @@ module Avinash
   module HelloCube
 
     unless file_loaded?(__FILE__)
-      ex = SketchupExtension.new('Hello Cube', 'as_create_cube/main')
+      # ex = SketchupExtension.new('Hello Cube', 'as_create_cube/main')
+      ex = SketchupExtension.new('Line Tool', 'as_line_tool/line_tool')
       ex.description = 'SketchUp Ruby API example creating a cube.'
       ex.version     = '1.0.0'
       ex.copyright   = 'Avisrini © 2020'
