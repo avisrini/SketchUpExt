@@ -2,7 +2,7 @@ require 'sketchup.rb'
 require 'extensions.rb'
 
 module Avinash
-  module HelloCube
+  module CustomTool
 
     unless file_loaded?(__FILE__)
       # ex = SketchupExtension.new('Hello Cube', 'as_create_cube/main')
@@ -15,5 +15,5 @@ module Avinash
       file_loaded(__FILE__)
     end
 
-  end # module HelloCube
+  end # module CustomTool
 end # module Avinash

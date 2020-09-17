@@ -1,6 +1,6 @@
 require 'sketchup.rb'
 
-module Examples
+module Avinash
   module CustomTool
 
     class LineTool
@@ -138,4 +138,4 @@ module Examples
     end
 
   end # module CustomTool
-end # module Examples
+end # module Avinash

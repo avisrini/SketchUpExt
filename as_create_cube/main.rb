@@ -1,7 +1,7 @@
 require 'sketchup.rb'
 
 module Avinash
-  module HelloCube
+  module CreateCube
 
 def self.create_cube
   model = Sketchup.active_model
@@ -28,5 +28,5 @@ unless file_loaded?(__FILE__)
   file_loaded(__FILE__)
 end
 
-  end # module HelloCube
+  end # module CreateCube
 end # module Avinash
