@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+        <link rel="stylesheet" href="wall.css" />
+        <style>
+            #wallCreateButton {
+                width: 230px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ui right labeled input">
+            <input type="text" placeholder="Enter the Wall Width (mm)" id="WallWidth" />
+            <div class="ui basic label">mm</div>
+        </div>
+        <br /><br />
+        <button class="ui green button" id="wallCreateButton">Create wall</button>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <script src="wall.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#wallCreateButton").click(function () {
+                    let wallDetails = {
+                        wall_width: $("#WallWidth").val(),
+                    };
+                    window.location.href = "skp:createWall@" + JSON.stringify(wallDetails);
+                });
+            });
+        </script>
+    </body>
+</html>
